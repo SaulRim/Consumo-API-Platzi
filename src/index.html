@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Platzi API</title>
+</head>
+<body>
+    <header>
+        <span>Platzi Store</span>
+        <div>
+            <span id="newProduct">New</span>
+            <img id = "logo" src="./img/logo.png" alt="">
+        </div>
+    </header>
+
+    <section id = "lead">
+        <img src="https://static.platzi.com/media/meta_tags/og/opengraph_cursos_all.png" alt="">
+        <div id = "text_lead">
+            <h1>Pagina</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus dignissimos eius odio iste?
+                <br>Quos enim doloribus dolorum sequi impedit iste aut.
+                <br>Amet tenetur possimus dolore quidem veniam reprehenderit aperiam cumque.</p>
+        </div>
+    </section>
+
+    <section id = "category">
+    </section>
+
+    <section id = "products">
+    </section>
+
+    <section id= "about">
+        <p><span>Creación:</span><span> 2023</span></p>
+        <p><span>Telefono:</span><span> 1345 7898 765</span></p>
+        <p><span>Correo:</span><span> correo@correo.com</span></p>
+    </section>
+
+    <section id = "optionSection" class="oculto">
+        <div class="cerrar" >
+            Cerrar
+        </div>
+        <div id= "filter">
+            <span id = "titleCrud">Agregar Producto</span>
+            
+            <label for="title">Nombre el producto: </label>
+            <input type="text" id = "postTitle" name="title" placeholder="camisa">
+
+            <label for="price">Precio</label>
+            <input type="number" id = "postPrice" name="price" placeholder="500" >
+
+            <label for="description">Descripcion</label>
+            <textarea name="description" id = "postDescription" cols="25" rows="4" placeholder="Producto de tela.">
+
+            </textarea>
+
+            <label for="categoryOption">Categoria</label>
+            <select id="categoryOption" name="categoryOption">
+                <option value="camisa">camisa</option>
+                <option value="chamarra">chamarra</option>
+            </select>
+
+            <label for="image">URL de la imagen</label>
+            <input type="text" id = "postURL" name="image" placeholder="https://placeimg.com/640/480/any">
+
+            <button id = "sendPost">Enviar</button>
+        </div>
+    </section>
+
+    <section id = "infoSection" class="oculto">
+        <div class="cerrar" >
+            Cerrar
+        </div>
+        <div id= "info">
+            <img src="/src/img/logo.png" alt="" id="imgInfo">
+            <span id = "productoInfo">Producto</span>
+            <span id = "precioInfo">10$</span>
+            <span id = "categoriaInfo">Donas</span>
+            <span id = "descriptionInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quibusdam blanditiis eveniet debitis. Illum esse, deserunt pariatur nisi corrupti quidem sit odio nihil ea repudiandae atque quaerat expedita ex sint?</span>
+
+            <button id="deleteButton">Eliminar</button>
+            <button id="putButton">Modificar</button>
+            
+        </div>
+    </section>
+
+    <footer>
+        <span>By Saul RM 2023</span>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+</html>

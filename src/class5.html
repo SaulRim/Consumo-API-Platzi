@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del producto</title>
+    <style>
+        :root {
+        --azul-osc: #142240;
+        --azul-int: #1D5359;
+        --azul-clar: #1F8C78;
+        --verde-clar: #97BF3F;
+        --verde-osc: rgb(104, 139, 29);
+        --blanco: #ccccaa;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #info{
+            background-color: var(--azul-int);
+            color: white;
+            font-size: 18px;
+            width: 500px;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            border-radius: 15px;
+            top: 50%; 
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+        }
+
+        #info button{
+            margin-top: 10px;
+            width: 90%;
+            height: 30px;
+        }
+
+        #prductoInfo{
+            color: var(--verde-clar);
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+        #precioInfo, #categoriaInfo{
+            margin-bottom: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="oculto">
+        <div id= "info">
+            <img src="/src/img/logo.png" alt="">
+            <span id = "prductoInfo">Producto</span>
+            <span id = "precioInfo">10$</span>
+            <span id = "categoriaInfo">Donas</span>
+            <span id = "descriptionInfo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis quibusdam blanditiis eveniet debitis. Illum esse, deserunt pariatur nisi corrupti quidem sit odio nihil ea repudiandae atque quaerat expedita ex sint?</span>
+            
+        </div>
+    </section>
+</body>
+</html>

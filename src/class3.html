@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+        --azul-osc: #142240;
+        --azul-int: #1D5359;
+        --azul-clar: #1F8C78;
+        --verde-clar: #97BF3F;
+        --verde-osc: rgb(104, 139, 29);
+        --blanco: #ccccaa;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #products .fila{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        #products .targeta{
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #products .targeta div{
+            display: flex;   
+            flex-direction: column;
+        }
+        #products .targeta div div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;  
+        }
+
+    </style>
+</head>
+<body>
+    <section id = "products">
+        <div class="fila">
+            <div class = "targeta">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <div>
+                        <span>Producto</span>
+                        <span>$20</span>
+                    </div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+            <div class = "targeta">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <div>
+                        <span>Producto</span>
+                        <span>$20</span>
+                    </div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+            <div class = "targeta">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <div>
+                        <span>Producto</span>
+                        <span>$20</span>
+                    </div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class = "targeta">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <div>
+                        <span>Producto</span>
+                        <span>$20</span>
+                    </div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+            <div class = "targeta">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <div>
+                        <span>Producto</span>
+                        <span>$20</span>
+                    </div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+            <div class = "targeta">
+                <img src="img/logo.png" alt="">
+                <div>
+                    <div>
+                        <span>Producto</span>
+                        <span>$20</span>
+                    </div>
+                    <button>Ver más</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

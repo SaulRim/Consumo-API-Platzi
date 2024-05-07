@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+        --azul-osc: #142240;
+        --azul-int: #1D5359;
+        --azul-clar: #1F8C78;
+        --verde-clar: #97BF3F;
+        --verde-osc: rgb(104, 139, 29);
+        --blanco: #ccccaa;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #filter{
+            background-color: var(--azul-int);
+            color: white;
+            font-size: 20px;
+            width: 400px;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+        #filter label{
+            margin-top: 7px;
+        }
+        #filter button{
+            margin-top: 10px;
+            width: 100px;
+        }
+        #filter ::placeholder {
+            text-align: center;
+        }
+
+        .oculto{
+            display: none;
+        }
+        .cerrar{
+            text-align: center;
+            cursor: pointer;
+            background-color: white;
+            color: #000;
+            width: 100%;
+            height: 25px;
+            margin: 0;
+        }
+        .optionSection{
+            max-width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="optionSection">
+        <div id="cerrar" onclick = "saludar()">
+            Cerrar
+        </div>
+        <section id= "filter">
+            <label for="title">Nombre el producto: </label>
+            <input type="text" name="title" placeholder="camisa">
+    
+            <label for="price">precio</label>
+            <input type="text" name="price" placeholder="500" >
+    
+            <label for="description">Descripcion</label>
+            <textarea name="description" id="" cols="21" rows="4" placeholder="Producto de tela."></textarea>
+    
+            <label for="category">Categoria</label>
+                <select id="category" name="category">
+                <option value="manzana">Manzana</option>
+            </select>
+    
+            <label for="image">URL de la imagen</label>
+            <input type="text" name="image" placeholder="https://placeimg.com/640/480/any">
+    
+            <button id = "filtros">Filtrar</button>
+        
+        </section>
+    </div>
+</body>
+</html>
